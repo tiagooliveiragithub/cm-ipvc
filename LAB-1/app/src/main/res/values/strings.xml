@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="button_go">Go to Activity AT2</string>
+    <string name="button_back">Go back</string>
+    <string name="pageat1">Page AT1</string>
+    <string name="pageat2">Page AT2</string>
+    <string name="author" translatable="false">Tiago Oliveira n28252</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="button_go">Ir para Atividade AT2</string>
+    <string name="button_back">Voltar</string>
+    <string name="pageat1">Página AT1</string>
+    <string name="pageat2">Página AT2</string>
+</resources>
