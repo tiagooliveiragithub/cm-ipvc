@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="note">Nota</string>
+    <string name="note_add">Adicionar Nota</string>
+    <string name="note_update">Atualizar Nota</string>
+    <string name="note_list">Lista de Notas</string>
+    <string name="save">Salvar</string>
+    <string name="back">Voltar</string>
+    <string name="delete">Eliminar</string>
+</resources>

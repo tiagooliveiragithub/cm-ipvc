@@ -20,7 +20,7 @@ class NoteViewModel(application: Application) : AndroidViewModel(application){
         readAllNotes = repository.readAllNotes
     }
 
-    fun  addNote(note: Note){
+    fun addNote(note: Note){
         viewModelScope.launch(Dispatchers.IO) {
             repository.addNote(note)
         }

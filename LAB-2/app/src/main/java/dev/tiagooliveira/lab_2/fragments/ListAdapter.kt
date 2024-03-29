@@ -14,7 +14,7 @@ import dev.tiagooliveira.lab_2.data.entities.Note
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     private var notesList = emptyList<Note>()
 
-    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {}
+    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.custom_row, parent, false))
@@ -26,7 +26,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = notesList[position]
-        holder.itemView.findViewById<TextView>(R.id.note_txt).text = currentItem.note
+        holder.itemView.findViewById<TextView>(R.id.note_txt).text = currentItem.description
+        holder.itemView.findViewById<TextView>(R.id.note_date).text = currentItem.date
 
         if(position%2 == 0)
             holder.itemView.findViewById<ConstraintLayout>(R.id.rowLayout).setBackgroundColor(Color.parseColor("#d6d4e0"))

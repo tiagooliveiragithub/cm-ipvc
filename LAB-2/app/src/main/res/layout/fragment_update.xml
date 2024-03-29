@@ -19,7 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nota"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            tools:text="@string/note" />
 
         <EditText
             android:id="@+id/updateNote"
@@ -30,18 +31,18 @@
             android:id="@+id/update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:text="@string/save" />
 
         <Button
             android:id="@+id/delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete" />
+            android:text="@string/delete" />
 
         <Button
             android:id="@+id/backToListFromUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back" />
+            android:text="@string/back" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

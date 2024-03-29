@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="note">poznamka</string>
+    <string name="note_add">pridat poznamku</string>
+    <string name="note_update">upravit poznamku</string>
+    <string name="note_list">seznam poznamek</string>
+    <string name="save">ulozit</string>
+    <string name="back">zpet</string>
+    <string name="delete">smazat</string>
+</resources>

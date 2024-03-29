@@ -18,7 +18,8 @@ class AddFragment : Fragment() {
     private lateinit var mNoteViewModel: NoteViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_add, container, false)
@@ -43,6 +44,8 @@ class AddFragment : Fragment() {
 
         if(noteText.isEmpty()) {
             Toast.makeText(view?.context, "Não pode uma nota vazia!", Toast.LENGTH_LONG).show()
+        } else if (noteText.length < 5) {
+            Toast.makeText(view?.context, "A nota não pode ter menos de 5 caracteres!", Toast.LENGTH_LONG).show()
         }
         else {
             val note = Note(0, noteText)

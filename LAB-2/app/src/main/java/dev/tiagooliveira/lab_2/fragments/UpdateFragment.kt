@@ -30,7 +30,7 @@ class UpdateFragment : Fragment() {
 
         mNoteViewModel = ViewModelProvider(this)[NoteViewModel::class.java]
 
-        view.findViewById<TextView>(R.id.updateNote).text = args.currentNote.note
+        view.findViewById<TextView>(R.id.updateNote).text = args.currentNote.description
 
         val updateButton = view.findViewById<Button>(R.id.update)
         updateButton.setOnClickListener {

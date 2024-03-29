@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25sp"
-    tools:context=".fragments.AddFragment">
+    android:padding="5sp"
+    tools:context=".fragments.UpdateFragment">
 
     <LinearLayout
-        android:id="@+id/ll_main_layout_add_report"
+        android:id="@+id/ll_main_layout_update_note"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left"
@@ -18,22 +18,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/note_add"
+            android:text="@string/note"
             android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/addNote"
+            android:id="@+id/updateNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/save"
+            android:id="@+id/update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/save" />
 
         <Button
-            android:id="@+id/backToList"
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/backToListFromUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/back" />
